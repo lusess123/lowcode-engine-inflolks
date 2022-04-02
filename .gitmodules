@@ -1,0 +1,15 @@
+[submodule "packages/engine/lowcode-engine"]
+	path = packages/engine/lowcode-engine
+	url = git@github.com:alibaba/lowcode-engine.git
+[submodule "packages/lowcode-engine"]
+	path = packages/lowcode-engine
+	url = git@github.com:alibaba/lowcode-engine.git
+[submodule "packages/lowcode-engine-ext"]
+	path = packages/lowcode-engine-ext
+	url = git@github.com:alibaba/lowcode-engine-ext.git
+[submodule "packages/lowcode-plugins"]
+	path = packages/lowcode-plugins
+	url = git@github.com:alibaba/lowcode-plugins.git
+[submodule "packages/lowcode-tools"]
+	path = packages/lowcode-tools
+	url = git@github.com:alibaba/lowcode-tools.git

@@ -1,0 +1,20 @@
+{
+  "name": "lowcode-engine-inflolks",
+  "version": "1.0.0",
+  "description": "lowcode-engine 在民间",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "link": "node ./script/link.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lusess123/lowcode-engine-inflolks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lusess123/lowcode-engine-inflolks/issues"
+  },
+  "homepage": "https://github.com/lusess123/lowcode-engine-inflolks#readme"
+}

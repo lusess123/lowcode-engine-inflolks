@@ -1,0 +1,64 @@
+{
+  "private": true,
+  "scripts": {
+    "start": " cross-env WATCH_IGNORED=node_modules/?!@alilc umi dev",
+    "build": "umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@alilc/lowcode-engine": "^1.0.3",
+    "@alilc/lowcode-engine-ext": "^1.0.3",
+    "@alilc/lowcode-plugin-code-editor": "^1.0.1",
+    "@alilc/lowcode-plugin-code-generator": "^1.0.2",
+    "@alilc/lowcode-plugin-components-pane": "^1.0.3",
+    "@alilc/lowcode-plugin-datasource-pane": "^1.0.2",
+    "@alilc/lowcode-plugin-inject": "^1.0.0",
+    "@alilc/lowcode-plugin-manual": "^1.0.2",
+    "@alilc/lowcode-plugin-schema": "^1.0.0",
+    "@alilc/lowcode-plugin-simulator-select": "^1.0.0",
+    "@alilc/lowcode-plugin-undo-redo": "^1.0.0",
+    "@alilc/lowcode-plugin-zh-en": "^1.0.0",
+    "@alilc/lowcode-react-renderer": "^1.0.3",
+    "@alilc/lowcode-setter-behavior": "^1.0.0",
+    "@alilc/lowcode-setter-title": "^1.0.2",
+    "@alilc/lowcode-utils": "^1.0.3",
+    "@ant-design/pro-layout": "^6.5.0",
+    "@builder.io/react": "^1.1.50",
+    "@steedos-builder/react": "^0.2.11",
+    "@steedos-builder/sdk": "^0.1.11",
+    "@steedos-ui/builder-object": "^1.1.25",
+    "@steedos-ui/builder-widgets": "^1.1.23",
+    "@steedos-widgets/design-system": "^0.2.1",
+    "antd": "^4.19.3",
+    "polished": "^4.1.4",
+    "react": "^17.0.2",
+    "react-dom": "^16.14.0",
+    "umi": "^3.5.20"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/plugin-sass": "^1.1.1",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.5.20",
+    "cross-env": "^7.0.3",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}
